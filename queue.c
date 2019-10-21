@@ -37,6 +37,7 @@ int enqueue(Queue** head, Queue** tail, unsigned pid) {
 		if (isEmpty(*head)) {
 			*head = newPtr;
 		} else {
+			//otherwise
             //set last node in queue to point to the new last node 
             //i.e - 0->1->2->3->NULL
 			(*tail)->next_node = newPtr;
